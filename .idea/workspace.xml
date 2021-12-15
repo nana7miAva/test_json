@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e07b821-72c3-4e25-8d5c-b385f21710c2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\LocalRepository" />
+        <option name="mavenHome" value="E:/maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="22JeXlSPvS2nkzMdCGNpnBC2MeK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.gitee" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test_json\src\main\java\write" />
+      <recent name="D:\test_json\src\main\java\read" />
+      <recent name="D:\test_json\src\main\java\utils" />
+      <recent name="D:\test_json\src\main\java" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e07b821-72c3-4e25-8d5c-b385f21710c2" name="Default Changelist" comment="" />
+      <created>1639560158083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639560158083</updated>
+      <workItem from="1639560161073" duration="536000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="619" y="318" key="Gitee.ShareDialog" timestamp="1639560536758">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="619" y="318" key="Gitee.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1639560536758" />
+    <state x="632" y="121" key="Gitee.UntrackedFilesDialog" timestamp="1639560363600">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="632" y="121" key="Gitee.UntrackedFilesDialog/0.0.1536.834@0.0.1536.834" timestamp="1639560363600" />
+    <state x="270" y="60" key="SettingsEditor" timestamp="1639560449896">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1639560449896" />
+    <state x="159" y="170" key="Vcs.Push.Dialog.v2" timestamp="1639560654495">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="159" y="170" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1639560654495" />
+  </component>
+</project>
