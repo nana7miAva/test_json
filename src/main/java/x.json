@@ -1,0 +1,84 @@
+{
+  "core": {
+    "transport": {
+      "channel": {
+        "speed": {
+          "channel": 2,
+          "record": -1,
+          "byte": -1,
+          "batchSize": 2048
+        }
+      }
+    }
+  },
+  "job": {
+    "content": [
+      {
+        "reader": {
+          "name": "mysqlreader",
+          "parameter": {
+            "column": [
+              "id",
+              "name"
+            ],
+            "connection": [
+              {
+                "jdbcUrl": [
+                  "jdbc:mysql://*********:3306/datacenter_dev?characterEncoding=utf8"
+                ],
+                "table": [
+                  "table_name1","table_name2","table_name3"
+                ],
+                "querySql": [
+                  "SELECT * from table_name where id > ${last_max}"
+                ]
+              }
+            ],
+            "password": "zzz",
+            "username": "123456",
+            "where": "id=5"
+          }
+        },
+        "writer": {
+          "name": "hdfswriter",
+          "parameter": {
+            "hadoopConfig": {
+              "dfs.nameservices": "${nameServices}",
+              "dfs.ha.namenodes.${nameServices}": "namenode1,namenode2",
+              "dfs.namenode.rpc-address.${nameServices}.namenode1": "${FS}",
+              "dfs.namenode.rpc-address.${nameServices}.namenode2": "${FSBac}",
+              "dfs.client.failover.proxy.provider.${nameServices}": "org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider"
+            },
+            "column": [
+              {
+                "name": "id",
+                "type": "int"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              }
+            ],
+            "compress": "snappy",
+            "defaultFS": "hhdfs://${nameServices}",
+            "fieldDelimiter": "\t",
+            "fileName": "test",
+            "fileType": "orc",
+            "path": "/path/test",
+            "writeMode": "append"
+          }
+        }
+      }
+    ],
+    "setting": {
+      "speed": {
+        "channel": "2",
+        "byte": 1046587
+      },
+      "errorLimt": {
+        "record": "0",
+        "percentage": "0.02"
+      }
+    }
+  }
+}
