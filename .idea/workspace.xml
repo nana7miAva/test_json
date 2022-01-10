@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e07b821-72c3-4e25-8d5c-b385f21710c2" name="Default Changelist" comment="" />
+    <list default="true" id="4e07b821-72c3-4e25-8d5c-b385f21710c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/columns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/read/Readcolumns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/write/WriteJsonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/write/WriteJsonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/x1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySQL2MySQL.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,9 +50,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.gitee" />
   </component>
   <component name="RecentsManager">
@@ -55,6 +62,40 @@
       <recent name="D:\test_json\src\main\java\utils" />
       <recent name="D:\test_json\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Readcolumns">
+    <configuration name="ReadJsonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="read.ReadJsonDemo" />
+      <module name="test_json" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="read.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Readcolumns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="read.Readcolumns" />
+      <module name="test_json" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="read.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Readcolumns" />
+        <item itemvalue="Application.ReadJsonDemo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -79,13 +120,31 @@
       <option name="presentableId" value="Default" />
       <updated>1639560158083</updated>
       <workItem from="1639560161073" duration="536000" />
+      <workItem from="1639562402234" duration="5278000" />
+      <workItem from="1639705627760" duration="3210000" />
     </task>
+    <task id="LOCAL-00001" summary="mysqltomysql示例json">
+      <created>1639562487294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639562487294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mysqltomysql示例json" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysqltomysql示例json" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="560" y="113" key="CommitChangelistDialog2" timestamp="1639562486462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1639562486462" />
     <state x="619" y="318" key="Gitee.ShareDialog" timestamp="1639560536758">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -94,13 +153,34 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="632" y="121" key="Gitee.UntrackedFilesDialog/0.0.1536.834@0.0.1536.834" timestamp="1639560363600" />
-    <state x="270" y="60" key="SettingsEditor" timestamp="1639560449896">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom" timestamp="1639566218539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639566218539" />
+    <state width="1877" height="258" key="GridCell.Tab.0.center" timestamp="1639566218539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639566218539" />
+    <state width="1877" height="258" key="GridCell.Tab.0.left" timestamp="1639566218539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639566218539" />
+    <state width="1877" height="258" key="GridCell.Tab.0.right" timestamp="1639566218539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639566218539" />
+    <state x="338" y="75" key="SettingsEditor" timestamp="1639562524438">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="270" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1639560449896" />
+    <state x="338" y="75" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1639562524438" />
     <state x="159" y="170" key="Vcs.Push.Dialog.v2" timestamp="1639560654495">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="159" y="170" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1639560654495" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1639709562066">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639709562066" />
   </component>
 </project>
