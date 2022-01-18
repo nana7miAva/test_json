@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e07b821-72c3-4e25-8d5c-b385f21710c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4e07b821-72c3-4e25-8d5c-b385f21710c2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +47,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -167,7 +163,7 @@
       <workItem from="1642151246002" duration="721000" />
       <workItem from="1642151987737" duration="198000" />
       <workItem from="1642152214574" duration="14843000" />
-      <workItem from="1642384359832" duration="22794000" />
+      <workItem from="1642384359832" duration="23073000" />
     </task>
     <task id="LOCAL-00001" summary="mysqltomysql示例json">
       <created>1639562487294</created>
@@ -183,21 +179,46 @@
       <option name="project" value="LOCAL" />
       <updated>1641780822664</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mysqltomysql示例json">
+      <created>1642488974308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642488974308</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mysqltomysql示例json">
+      <created>1642489012256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642489012256</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mysqltomysql示例json" />
     <option name="LAST_COMMIT_MESSAGE" value="mysqltomysql示例json" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="113" key="CommitChangelistDialog2" timestamp="1642488966758">
+    <state x="560" y="113" key="CommitChangelistDialog2" timestamp="1642489011240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1642488966758" />
+    <state x="560" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1642489011240" />
     <state x="619" y="318" key="Gitee.ShareDialog" timestamp="1639560536758">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -238,11 +259,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642474285038" />
-    <state x="338" y="75" key="SettingsEditor" timestamp="1642152012701">
+    <state x="338" y="75" key="SettingsEditor" timestamp="1642489227502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="270" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1639560449896" />
-    <state x="338" y="75" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642152012701" />
+    <state x="338" y="75" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642489227502" />
     <state x="159" y="170" key="Vcs.Push.Dialog.v2" timestamp="1639560654495">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
