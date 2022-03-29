@@ -21,17 +21,19 @@ public class createProcessDataX {
 
 
         String projectCode = "4000994290048"; //zzz
-        String token = "701d993e6a03ee865e8c9d4fe15f7396";
+        String token = "ff53ac501e5b419d90aab0a30e778c49";
         String dataXJson = "{\n" +
                 "  \"job\": {\n" +
                 "    \"setting\": {\n" +
                 "      \"speed\": {\n" +
                 "        \"channel\": 3,\n" +
+
                 "        \"byte\": 1048576\n" +
                 "      },\n" +
                 "      \"errorLimit\": {\n" +
                 "        \"record\": 0,\n" +
                 "        \"percentage\": 0.02\n" +
+
                 "      }\n" +
                 "    },\n" +
                 "    \"content\": [\n" +
@@ -250,7 +252,7 @@ public class createProcessDataX {
 
         //添加参数
         params.add(new BasicNameValuePair("locations", locations_json.toJSONString()));
-        params.add(new BasicNameValuePair("name", "apiTest-20220108_2"));
+        params.add(new BasicNameValuePair("name", "apiTest-20220108_3"));
 
         //关键参数
 

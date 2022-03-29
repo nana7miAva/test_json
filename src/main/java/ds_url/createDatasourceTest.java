@@ -30,7 +30,7 @@ import java.io.IOException;
 public class createDatasourceTest {
     public static void main(String[] args) {
 
-        String token = "701d993e6a03ee865e8c9d4fe15f7396";
+        String token = "ff53ac501e5b419d90aab0a30e778c49";
 
         //传参
         /*HashMap<String, String> conMap = new HashMap<String, String>();

@@ -25,7 +25,7 @@ public class createProcessTest {
         //通过token来控制用户权限 但是好像没用
 
         //获取project的projectcode
-        String user_token = "701d993e6a03ee865e8c9d4fe15f7396";
+        String user_token = "ff53ac501e5b419d90aab0a30e778c49";
         urlGetProjectTest urlGetProjectTest = new urlGetProjectTest();
         JSONObject proList = urlGetProjectTest.getProList(user_token);
         JSONArray data = proList.getJSONArray("data");
@@ -43,10 +43,10 @@ public class createProcessTest {
         String projectCode = codeMap.get("zzz");
         System.out.println(projectCode);
         //token
-        String token = "701d993e6a03ee865e8c9d4fe15f7396";
+        String token = "ff53ac501e5b419d90aab0a30e778c49";
         //传参 调用方法
         createProcessTest createProcessTest = new createProcessTest();
-        createProcessTest.createProcess(projectCode, token);
+       // createProcessTest.createProcess(projectCode, token);
 
     }
 

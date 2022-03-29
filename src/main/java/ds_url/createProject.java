@@ -14,9 +14,9 @@ import org.apache.http.util.EntityUtils;
 import java.util.ArrayList;
 //创建项目
 
-public class urlPostTest {
+public class createProject {
     public static void main(String[] args) throws Exception {
-        createProject("zzz", "zzz", "701d993e6a03ee865e8c9d4fe15f7396", "application/json");
+        createProject("zzz", "zzz", "ff53ac501e5b419d90aab0a30e778c49", "application/json");
     }
 
     public static String createProject(String description, String projectName, String token, String Accept) throws Exception {

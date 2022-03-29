@@ -34,7 +34,7 @@ public class tenants_Test {
         //根据参数生成get请求对象
         HttpGet httpGet = new HttpGet(build);
         //添加请求头 admin的token
-        httpGet.setHeader("token", "c16a1e3a9946df5746ee6ef7c23e9f05");
+        httpGet.setHeader("token", "ff53ac501e5b419d90aab0a30e778c49");
         //生成连接 执行
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse response = client.execute(httpGet);

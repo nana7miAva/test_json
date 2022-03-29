@@ -1,8 +1,8 @@
 package ds_url;
 
 
+//获取任务定时需要的processcode
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpEntity;
@@ -18,41 +18,29 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.HashMap;
+import java.util.Map;
 
-
-//获取当前project的所有process信息 包含有 process_code
-
-public class GetProcessList {
+public class getProcessCode {
     public static void main(String[] args) {
 
-        //获取project的projectcode
-        String user_token = "ff53ac501e5b419d90aab0a30e778c49";
-        urlGetProjectTest urlGetProjectTest = new urlGetProjectTest();
-        JSONObject proList = urlGetProjectTest.getProList(user_token);
-        JSONArray data = proList.getJSONArray("data");
+        String token = "ff53ac501e5b419d90aab0a30e778c49";
+        HashMap<String, String> projectMap = urlGetProjectTest.getProjectMap(token);
 
-        HashMap<String, String> codeMap = new HashMap<String, String>();
-        for (int i = 0; i < data.size(); i++) {
-            codeMap.put(data.getJSONObject(i).getString("name"), data.getJSONObject(i).getString(
-                    "code"));
-        }
+        String zzz = projectMap.get("zzz");
+        JSONObject jsonObject = getProcessCode(zzz, token);
+        Map<String, String> processCodeMap = getProcessCodeMap(zzz, token);
+        System.out.println(processCodeMap.toString());
 
-        System.out.println(codeMap);
 
-        //在project中创建process
+        //获取到这些process的processDefinition的code 这个是processcode
 
-        //根据项目名称获取project_code
-        String projectCode = codeMap.get("zzz");
-
-        GetProcessList processList = new GetProcessList();
-        //data.taskDefinitionList.code 就是 process_code
-        System.out.println(processList.GetProcessList(projectCode, user_token));
 
     }
 
+    // 返回process的详细信息 json字符串
+    public static JSONObject getProcessCode(String projectCode, String token) {
 
-    public static  JSONObject GetProcessList(String projectCode, String token) {
-        String url = "http://ds1:12306/dolphinscheduler/projects/" + projectCode + "/process-definition/list";
+        String url = "http://ds1:12306/dolphinscheduler/projects/" + projectCode + "/process-definition/all";
 
 
         //有参数的get请求
@@ -75,7 +63,7 @@ public class GetProcessList {
             response = client.execute(httpGet);
             HttpEntity entity = response.getEntity();
 
-            String proList = EntityUtils.toString(entity,"utf-8");
+            String proList = EntityUtils.toString(entity, "utf-8");
             result = JSONObject.parseObject(proList);
 
         } catch (URISyntaxException e) {
@@ -97,4 +85,25 @@ public class GetProcessList {
         }
         return result;
     }
+
+
+    //processcode 和 processname 放到一个Map里面 方面后面用
+    public static Map<String, String> getProcessCodeMap(String projectCode, String token) {
+
+        HashMap<String, String> resultMap = new HashMap<String, String>();
+        JSONObject processCode = getProcessCode(projectCode, token);
+        JSONArray jsonArray = processCode.getJSONArray("data");
+
+        for (int i = 0; i < jsonArray.size(); i++) {
+            resultMap.put(
+                    jsonArray.getJSONObject(i).getJSONObject("processDefinition").getString("name"),
+                    jsonArray.getJSONObject(i).getJSONObject("processDefinition").getString("code")
+            );
+        }
+
+
+        return resultMap;
+    }
+
 }
+
