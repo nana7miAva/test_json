@@ -27,7 +27,7 @@ public class createSchedule {
         //token
         String token = "ff53ac501e5b419d90aab0a30e778c49";
         //获取projectcod
-        HashMap<String, String> projectMap = urlGetProjectTest.getProjectMap(token);
+        HashMap<String, String> projectMap = GetProject.getProjectMap(token);
 
         String projectCode = projectMap.get("zzz");
         System.out.println("zzz" + projectCode);

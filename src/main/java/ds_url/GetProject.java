@@ -17,14 +17,14 @@ public class GetProject {
     public static void main(String[] args) throws Exception {
 
 
-        String token = "ff53ac501e5b419d90aab0a30e778c49";
+        String token = "af6452737bdf484f5d922c51caa4f053";
         //
         GetProject urlGetTest = new GetProject();
         System.out.println(urlGetTest.getProList(token));
     }
 
     public static JSONObject getProList(String token) {
-        String requestUrl = "http://ds1:12306/dolphinscheduler/projects/list";
+        String requestUrl = "http://172.16.10.34:12345/dolphinscheduler/projects/list";
 
 
         URL url = null;

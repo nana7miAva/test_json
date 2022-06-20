@@ -26,7 +26,7 @@ public class createProcessTest {
 
         //获取project的projectcode
         String user_token = "ff53ac501e5b419d90aab0a30e778c49";
-        urlGetProjectTest urlGetProjectTest = new urlGetProjectTest();
+        GetProject urlGetProjectTest = new GetProject();
         JSONObject proList = urlGetProjectTest.getProList(user_token);
         JSONArray data = proList.getJSONArray("data");
 

@@ -49,7 +49,7 @@ public class createDatasourceTest {
                 "     \"database\": \"test\",\n" +
                 "     \"host\": \"ds1\",\n" +
                 "     \"id\": 0,\n" +
-                "     \"name\": \"api_test2\",\n" +
+                "     \"name\": \"api_test4\",\n" +
                 "     \"note\": \"\",\n" +
                 "     \"other\": {},\n" +
                 "     \"password\": \"dba%2021\",\n" +
@@ -123,7 +123,7 @@ public class createDatasourceTest {
 
 
         }
-        return  "创建新的数据库连接 :" + resultJson.getString("msg");
+        return  "创建新的数据库连接 :" + resultJson.toJSONString();
 
 
     }
@@ -185,7 +185,7 @@ public class createDatasourceTest {
 
 
         }
-        return  "数据源连接 :" + resultJson.getString("msg");
+        return  "数据源连接 :" + resultJson.toJSONString();
 
 
     }

@@ -21,7 +21,7 @@ public class updateProcess {
 
         String token = "ff53ac501e5b419d90aab0a30e778c49";
         //projectCode
-        HashMap<String, String> projectMap = urlGetProjectTest.getProjectMap(token);
+        HashMap<String, String> projectMap = GetProject.getProjectMap(token);
         //System.out.println(projectMap.get("zzz"));
         String projectCode = projectMap.get("zzz");
 

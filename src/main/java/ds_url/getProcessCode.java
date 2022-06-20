@@ -24,7 +24,7 @@ public class getProcessCode {
     public static void main(String[] args) {
 
         String token = "ff53ac501e5b419d90aab0a30e778c49";
-        HashMap<String, String> projectMap = urlGetProjectTest.getProjectMap(token);
+        HashMap<String, String> projectMap = GetProject.getProjectMap(token);
 
         String zzz = projectMap.get("zzz");
         JSONObject jsonObject = getProcessCode(zzz, token);

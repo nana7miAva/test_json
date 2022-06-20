@@ -1,8 +1,5 @@
 package ds_url;
 
-
-
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpEntity;
@@ -17,42 +14,26 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.HashMap;
 
-
-//获取当前project的所有process信息 包含有 process_code
-
-public class GetProcessList {
+//流程实例列表
+public class queryProcessInstance {
     public static void main(String[] args) {
 
-        //获取project的projectcode
-        String user_token = "af6452737bdf484f5d922c51caa4f053";
-        GetProject urlGetProjectTest = new GetProject();
-        JSONObject proList = urlGetProjectTest.getProList(user_token);
-        JSONArray data = proList.getJSONArray("data");
-
-        HashMap<String, String> codeMap = new HashMap<String, String>();
-        for (int i = 0; i < data.size(); i++) {
-            codeMap.put(data.getJSONObject(i).getString("name"), data.getJSONObject(i).getString(
-                    "code"));
+        String projectCode="4000994290048";
+        String token="ff53ac501e5b419d90aab0a30e778c49";
+        JSONObject jsonObject = queryProcessInstanceList(projectCode,token);
+        //System.out.println(jsonObject);
+        JSONArray jsonArray = jsonObject.getJSONObject("data").getJSONArray("totalList");
+        for (int i = 0; i <jsonArray.size() ; i++) {
+            System.out.println(jsonArray.getJSONObject(i));
+            System.out.println("---");
         }
-
-        System.out.println(codeMap);
-
-        //在project中创建process
-
-        //根据项目名称获取project_code
-        String projectCode = codeMap.get("操作王中王之无上操作皇");
-
-        GetProcessList processList = new GetProcessList();
-        //data.taskDefinitionList.code 就是 process_code
-        System.out.println(processList.GetProcessList(projectCode, user_token));
 
     }
 
 
-    public static  JSONObject GetProcessList(String projectCode, String token) {
-        String url = "http://172.16.10.34:12345/dolphinscheduler/projects/" + projectCode + "/process-definition/list";
+    public static JSONObject queryProcessInstanceList(String projectCode, String token) {
+        String url = "http://ds1:12306/dolphinscheduler/projects/" + projectCode + "/process-instances";
 
 
         //有参数的get请求
@@ -63,6 +44,8 @@ public class GetProcessList {
         try {
             uriBuilder = new URIBuilder(url);
             uriBuilder.addParameter("projectCode", projectCode);
+            uriBuilder.addParameter("pageSize", "50");
+            uriBuilder.addParameter("pageNo", "1");
             URI build = uriBuilder.build();
 
 

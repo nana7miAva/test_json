@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class createConProDataX2 {
     public static void main(String[] args) {
 
-        String projectCode = "4000994290048"; //zzz
+        String projectCode = "5114778137952"; //zzz
         String token = "ff53ac501e5b419d90aab0a30e778c49";
 
         String locations_str = "[\n" +
@@ -213,7 +213,7 @@ public class createConProDataX2 {
     public static JSONObject createProcessDataX(String processName, String projectCode, String token, String locations_str, String taskDefinitionJson, String taskRelationJson) {
 
 
-        String url = "http://ds1:12306/dolphinscheduler/projects/" + projectCode + "/process-definition";
+        String url = "http://ds1:12345/dolphinscheduler/projects/" + projectCode + "/process-definition";
 
         //post请求对象
         HttpPost post = new HttpPost(url);

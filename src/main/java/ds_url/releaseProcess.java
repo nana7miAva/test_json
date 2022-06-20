@@ -26,7 +26,7 @@ public class releaseProcess {
 
         String token = "ff53ac501e5b419d90aab0a30e778c49";
 
-        HashMap<String, String> projectMap = urlGetProjectTest.getProjectMap(token);
+        HashMap<String, String> projectMap = GetProject.getProjectMap(token);
         //name也要作为参数传递
         String projectName="zzz";
         String projectCode = projectMap.get(projectName);
