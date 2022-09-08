@@ -7,6 +7,18 @@
     <groupId>org.example</groupId>
     <artifactId>test_json</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <!--lombok-->
         <dependency>
@@ -48,6 +60,19 @@
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
         </dependency>
+        <!--openlookeng-->
+        <dependency>
+            <groupId>io.hetu.core</groupId>
+            <artifactId>hetu-jdbc</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <!--md5加密工具包-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+        </dependency>
+
 
     </dependencies>
 

@@ -42,26 +42,24 @@ public class faker {
         }
         //开始插入数据
 
-            for (fakerBean fakerBean : list) {
+        for (fakerBean fakerBean : list) {
 
-                String sql = "INSERT into mock_z VALUES (?,?,?,?,?,?,?,?,?);";
-                preparedStatement = connection.prepareStatement(sql);
-                preparedStatement.setObject(1, fakerBean.getId());
-                preparedStatement.setObject(2, fakerBean.getName());
-                preparedStatement.setObject(3, fakerBean.getPhone());
-                preparedStatement.setObject(4, fakerBean.getUniversity());
-                preparedStatement.setObject(5, fakerBean.getCity());
-                preparedStatement.setObject(6, fakerBean.getStreet());
-                preparedStatement.setObject(7, fakerBean.getSalary());
-                preparedStatement.setObject(8, fakerBean.getJob());
-                preparedStatement.setObject(9, fakerBean.getLoad_date());
-                int i = preparedStatement.executeUpdate();
-                //preparedStatement.addBatch();
-            }
+            String sql = "INSERT into mock_z VALUES (?,?,?,?,?,?,?,?,?);";
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setObject(1, fakerBean.getId());
+            preparedStatement.setObject(2, fakerBean.getName());
+            preparedStatement.setObject(3, fakerBean.getPhone());
+            preparedStatement.setObject(4, fakerBean.getUniversity());
+            preparedStatement.setObject(5, fakerBean.getCity());
+            preparedStatement.setObject(6, fakerBean.getStreet());
+            preparedStatement.setObject(7, fakerBean.getSalary());
+            preparedStatement.setObject(8, fakerBean.getJob());
+            preparedStatement.setObject(9, fakerBean.getLoad_date());
+            int i = preparedStatement.executeUpdate();
+            //preparedStatement.addBatch();
+        }
 
-
-            preparedStatement.executeBatch();
-
+        preparedStatement.executeBatch();
 
 
         try {
